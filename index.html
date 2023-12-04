@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDoList</title>
+    <link rel="stylesheet" href="assets/font/Playball-Regular.ttf">
+    <link rel="stylesheet" href="assets/icon/css/fontello.css">
+    <link rel="stylesheet" href="assets/style/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/style/master.css">
+</head>
+
+<body>
+    <main id="main">
+        <section class="container-fluid container-xxl col-11 col-md-9">
+            <div class="row">
+                <h1 class="text-center mt-3">ToDoList</h1>
+                <div class="head_top col-12">
+                    <label for="task">Task : </label>
+                    <input id="task" type="text" placeholder="Add Task..." autofocus class="col-12 h-10 ">
+                    <label for="who">Who Should Do It :</label>
+                    <input id="who" type="text" placeholder="Add User..." class="col-12 h-10">
+                    <label for="date">Due Date :</label>
+                    <input type="date" name="" id="date" class="col-12 ">
+                </div>
+                <div class="head_bottom col-12 d-flex flex-wrap align-items-end justify-content-evenly">
+                    <button onclick="_add()" id="add_task" class="col-3 col-md-2">ADD TASK</button>
+                    <button class="delete_checked col-3 col-md-2">DELETE</button>
+                    <input id="_search" type="text" placeholder="Search... " class="col-3 col-md-2">
+                </div>
+                <div id="para" class="show_task">
+
+                </div>
+                <div class="print_task col-12 d-flex flex-wrap justify-content-center align-items-center mt-3">
+                    <h2 class="numbertask w-100 d-flex justify-content-center ">Number of Tasks : 0 </h2>
+                    <h2 class="taskdone w-100  d-flex justify-content-center">Tasks done : 0</h2>
+                    <h2>Made with 💙 Hossein Deyri | 2023</h2>
+                    <a href="https://github.com/hossein-deyri"><i class="demo-icon icon-github-circled"></i></a>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+<script src="assets/js/master.js"></script>
+
+</html>
